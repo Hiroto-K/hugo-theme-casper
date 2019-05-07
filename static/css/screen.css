@@ -207,9 +207,6 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon-mail:before {
     content: "\f410";
 }
-.icon-google-plus:before {
-    content: "\f206";
-}
 .icon-facebook:before {
     content: "\f203";
 }
@@ -590,8 +587,7 @@ body.nav-opened .site-wrapper {
 .main-header a.bloglogo .icon-twitter,
 .main-header a.bloglogo .icon-facebook,
 .main-header a.bloglogo .icon-instagram,
-.main-header a.bloglogo .icon-pinterest,
-.main-header a.bloglogo .icon-google-plus {
+.main-header a.bloglogo .icon-pinterest {
     color: white;
     font-size: 2em;
 }
