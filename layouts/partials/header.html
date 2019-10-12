@@ -64,14 +64,14 @@
         <script>hljs.initHighlightingOnLoad();</script>
     {{end}}
 
-    {{ if .Site.Params.RSSLink}}
-        <link href="{{.Site.Params.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ if .Site.Params.RelPermalink}}
+        <link href="{{.Site.Params.RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{else}}
       {{ if ne .URL "/" }}
           <link href="{{ "index.xml" | relURL}}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
       {{ end }}
       {{if .IsNode}}
-        <link href="{{.RSSLink}}" rel="alternate" type="application/rss+xml" title="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
+        <link href="{{.RelPermalink}}" rel="alternate" type="application/rss+xml" title="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
       {{end}}
     {{end}}
     {{.Hugo.Generator}}
