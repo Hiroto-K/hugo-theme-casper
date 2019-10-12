@@ -74,7 +74,7 @@
         <link href="{{.RelPermalink}}" rel="alternate" type="application/rss+xml" title="{{ if ne .Permalink "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}" />
       {{end}}
     {{end}}
-    {{.Hugo.Generator}}
+    {{ hugo.Generator }}
 
     <link rel="canonical" href="{{ .Permalink }}" />
 
